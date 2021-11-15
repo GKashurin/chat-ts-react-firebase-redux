@@ -1,4 +1,4 @@
-В проекте использованы технологии: React, Redux, Firebase-firestore, TypeScript.
+В проекте использованы технологии: React, Redux, Firebase-firestore, TypeScript, Material UI.
 
 Запуск проекта: npm start.
 
