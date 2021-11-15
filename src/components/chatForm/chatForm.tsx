@@ -17,15 +17,17 @@ const ChatForm: React.FC<ChatFormProps> = ({roomName, authUserName, roomID}) => 
 
 	const sendMessage = (e: React.MouseEvent<HTMLButtonElement>): void => {
 		e.preventDefault();
-		db.collection("rooms")
-			.doc(roomID)
-			.collection("messages")
-			.add({
-				message: message,
-				timestamp: firebase.firestore.FieldValue.serverTimestamp(),
-				user: authUserName.displayName
-			})
-		setMessage("")
+		if (message.length > 0) {
+			db.collection("rooms")
+				.doc(roomID)
+				.collection("messages")
+				.add({
+					message: message,
+					timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+					user: authUserName.displayName
+				})
+			setMessage("")
+		}
 	}
 
 	return (
