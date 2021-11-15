@@ -1,0 +1,13 @@
+.message {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  &__wrapper {
+    display: flex;
+    align-items: center;
+  }
+  &__controls {
+    position: relative;
+  }
+}

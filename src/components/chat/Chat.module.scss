@@ -1,0 +1,15 @@
+.chat {
+  flex: 0.7;
+  flex-grow: 1;
+  &__content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(219, 214, 214, 0.84);
+  }
+}
+.messages {
+  flex: auto;
+  padding: 10px;
+}

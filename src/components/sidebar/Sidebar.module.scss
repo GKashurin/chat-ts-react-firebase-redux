@@ -1,0 +1,23 @@
+.sidebar {
+  background-color: var(--mainColor);
+  color: white;
+  flex: 0.3;
+  max-width: 250px;
+
+  &__info {
+    flex: 1;
+    h2 {
+      font-size: 15px;
+      font-weight: 700;
+    }
+    h3 {
+      display: flex;
+      font-size: 13px;
+      font-weight: 400;
+      align-items: center;
+    }
+  }
+  &__options {
+    padding: 10px 5px 10px 13px;
+  }
+}

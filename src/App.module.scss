@@ -1,0 +1,42 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  --mainColor: #0c1021;
+}
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.App {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.home {
+  display: flex;
+  flex: auto;
+}
+
+.header {
+  display: flex;
+  padding: 13px;
+  background-color: #0c1021;
+  color: white;
+  height: 30px;
+  .MuiSvgIcon-root {
+    color: green;
+    width: 14px;
+    height: 14px;
+  }
+}
+
+p {
+  font-size: 12px;
+  margin-bottom: 2px;
+}
+svg {
+  cursor: pointer;
+}
